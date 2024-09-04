@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.svg-icon.search-icon {
+
+  /* On hover: blue strokes */
+  &:focus,
+  &:hover {
+    .search-path {
+      stroke: #299ecc;
+    }
+  }
+
+  /* On click: thicker black strokes  */
+  &:active {
+    .search-path {
+      stroke: #111516;
+      stroke-width: 2px;
+    }
+  }
+}
